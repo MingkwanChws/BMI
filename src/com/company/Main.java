@@ -1,4 +1,5 @@
 package com.company;
+import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
@@ -6,15 +7,14 @@ public class Main {
         float weight;
         float high;
         float BMI;
-        Scanner kmitl = new Scanner (System.in);
+        Scanner mass = new Scanner (System.in);
         System.out.println("Enter weight");
-        weight = kmitl.nextFloat();
+        weight = mass.nextFloat();
         System.out.println("Enter high(m)");
-        high = kmitl.nextFloat();
+        high = mass.nextFloat();
         BMI = weight/(high*high);
         System.out.printf("BMI = %.2f\n", BMI);
         if (BMI < 18.5) {
-
             System.out.println("Underweight");
         }else if (BMI >= 18.5 && BMI <= 24.9) {
             System.out.println("Healthy");
